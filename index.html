@@ -1,2 +1,77 @@
-<!DOC_TYPE html>
-gang
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxite Starboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: #d1a3ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      position: absolute;
+      top: 10%;
+      font-size: 3rem;
+      text-align: center;
+      color: #d1a3ff;
+      text-shadow: 0 0 10px #a64eff, 0 0 20px #a64eff;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .square {
+      width: 150px;
+      height: 150px;
+      background-color: black;
+      border: 3px solid #a64eff;
+      box-shadow: 0 0 10px #a64eff, 0 0 20px #a64eff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 10px;
+      cursor: pointer;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .square:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 20px #d1a3ff, 0 0 30px #d1a3ff;
+    }
+
+    .square a {
+      text-decoration: none;
+      color: #d1a3ff;
+      font-size: 1.2rem;
+      text-shadow: 0 0 5px #a64eff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Galaxite Starboard</h1>
+  <div class="grid-container">
+    <div class="square">
+      <a href="plugins.html">🔌<br>Plugins</a>
+    </div>
+    <div class="square">
+      <a href="maps.html">🗺️<br>Maps</a>
+    </div>
+    <div class="square">
+      <a href="news.html">🗞️<br>News</a>
+    </div>
+  </div>
+</body>
+</html>
